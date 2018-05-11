@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运维单点登录系统</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'mama_cas/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'mama_cas/css/site.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'mama_cas/css/login.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'mama_cas/css/font-awesome.min.css' %}" />
+    <script src="{% static 'mama_cas/scripts/jquery-2.1.4.min.js' %}"></script>
+    <script src="{% static 'mama_cas/scripts/modernizr-2.6.2.js' %}"></script>
+</head>
+
+<body class="loginBody">
+    {% block content %}{% endblock %}
+
+    <script src="{% static 'mama_cas/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'mama_cas/scripts/respond.js' %}"></script>
+    {% block scripts %}
+        
+    {% endblock %}
+</body>
+</html>
